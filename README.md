@@ -1,7 +1,7 @@
 # hotel-project-cliente
 - Aplicação front-end do teste prático feita em Angular
 
-![GIF_TELAS](https://github.com/Bruno-ferrariv/hotel-project-cliente/blob/main/gif/hotel_project_animacao.gif)
+![GIF_TELAS](https://github.com/Bruno-ferrariv/hotel-project-client/blob/main/gif/hotel_project_animacao.gif)
 
 ## Tecnologias utilizadas
 - Angular (Type Script, HTML, CSS) | versão 10.0.11
@@ -30,7 +30,7 @@ Pré-requisitos:
 - Angular
 
 ```bash
-# Baixe ou clone este repositório usando https://github.com/Bruno-ferrariv/hotel-project-server
+# Baixe ou clone este repositório usando https://github.com/Bruno-ferrariv/hotel-project-client
 
 # Estar no projeto pelo terminal e instalar as dependências
 npm i
