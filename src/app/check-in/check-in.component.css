@@ -1,0 +1,47 @@
+#containerCheckIn
+{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+#filtro_box{
+  display:inline-block;
+   align-items: center;
+  width: 500px;
+
+}
+
+#filtro_box ul{
+  list-style-type: none;
+}
+#btnCheckIn{
+  align-self: flex-end;
+  justify-content: flex-end;
+}
+
+#btnFiltrar{
+  margin-left: 20px;
+  height: 30px;
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+
+}
+
+#filtro{
+  margin-left: 20px;
+  width: 270px;
+
+}
+
+#filtro_box h2{
+  margin-left: 20px;
+}
+
+
+#false{
+  margin-left: 20px;
+
+}

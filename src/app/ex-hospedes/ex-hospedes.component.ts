@@ -7,7 +7,7 @@ import { HospedeDTO } from '../models/hospedeDTO';
 @Component({
   selector: 'app-ex-hospedes',
   templateUrl: './ex-hospedes.component.html',
-  styleUrls: ['./ex-hospedes.component.css']
+  styleUrls: []
 })
 export class ExHospedesComponent implements OnInit {
 

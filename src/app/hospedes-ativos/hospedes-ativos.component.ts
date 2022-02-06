@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-hospedes-ativos',
   templateUrl: './hospedes-ativos.component.html',
-  styleUrls: ['./hospedes-ativos.component.css']
+  styleUrls: []
 })
 export class HospedesAtivosComponent implements OnInit {
 
@@ -46,10 +46,10 @@ export class HospedesAtivosComponent implements OnInit {
 
   checkOut(id : number){
 
-    let idd =  new CheckOutDTO
-    idd.id = id
+    let checkOut =  new CheckOutDTO
+    checkOut.id = id
 
-    this.hospedagemService.checkOut(idd).subscribe( data => {
+    this.hospedagemService.checkOut(checkOut).subscribe( data => {
       console.log(data);
       this.getHospedesAtivos();
     })

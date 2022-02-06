@@ -14,16 +14,12 @@ export class HospedagemService {
 
   constructor(private httpClient: HttpClient) { }
 
-
-
-  checkOut(CheckOutDTO: CheckOutDTO): Observable<HospedagemDTO>{
-    return this.httpClient.patch<HospedagemDTO>(`${this.baseURL}`, this.checkOut);
+  checkOut(checkOutDTO: CheckOutDTO): Observable<HospedagemDTO>{
+    return this.httpClient.patch<HospedagemDTO>(`${this.baseURL}`, checkOutDTO);
   }
 
   checkIn(hospedagem : HospedagemInsertDTO): Observable<HospedagemInsertDTO>{
     return this.httpClient.post<HospedagemInsertDTO>(`${this.baseURL}`, hospedagem);
   }
-
-
 
 }

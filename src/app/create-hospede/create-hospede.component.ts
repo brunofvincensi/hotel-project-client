@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-create-hospede',
   templateUrl: './create-hospede.component.html',
-  styleUrls: ['./create-hospede.component.css']
+  styleUrls: []
 })
 export class CreateHospedeComponent implements OnInit {
 

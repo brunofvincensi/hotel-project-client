@@ -1,1 +1,52 @@
-<p>check-in works!</p>
+<br><br><br>
+<div id="containerCheckIn">
+
+  <div id="filtro_box" >
+
+    <div>
+    <h2 for="filtro">Pesquisar hóspede</h2><br>
+    <input type="text" placeholder="CPF, nome, telefone" id="filtro" [(ngModel)]="filtro">
+    <button type ="button" (click) = "filtrar()" id="btnFiltrar" >Filtrar</button>
+
+  </div></div>
+    <br><form (ngSubmit) = "onSubmit()">
+
+    <table class = "table table-striped">
+      <thead>
+          <tr>
+              <th> Nome</th>
+              <th> CPF</th>
+              <th> Email </th>
+              <th> Telefone</th>
+              <th> Select </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor = "let hospede of hospedes" >
+              <td> {{ hospede.nome }} </td>
+              <td> {{ hospede.cpf }} </td>
+              <td> {{ hospede.email }} </td>
+              <td> {{ hospede.telefone }} </td>
+              <td> <input type="radio"  (click) = "setHospedeId(hospede.id)"   id="hospede.id"  value="select"  name="hospedeId"> </td>
+          </tr>
+      </tbody>
+  </table>
+
+   <label for="comGaragem" style="color: aliceblue;">Com Garagem? </label><br>
+
+   <input type="radio" value="true" id="true" name="comGaragem" (click) = "setTrue()">
+   <label for="true" style="color: aliceblue;"> Sim </label>
+
+   <input type="radio" value="false" id="false" name="comGaragem" (click) = "setFalse()">
+   <label for="false" style="color: aliceblue;"> Não </label>
+
+   <br><br>
+    <label for="numeroQuarto"> Selecione o número do quarto </label>
+    <input type="number" id="numeroQuarto"  name="numeroQuarto"[(ngModel)] = "hospedagemInsertDTO.numeroQuarto" >
+    <br><br>
+    <button id="btnCheckIn" class = "btn btn-success" type ="submit">Submit</button>
+  </form>
+
+
+
+</div>

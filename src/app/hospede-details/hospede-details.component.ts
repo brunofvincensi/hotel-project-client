@@ -6,7 +6,7 @@ import { HospedeService } from '../services/hospede.service';
 @Component({
   selector: 'app-hospede-details',
   templateUrl: './hospede-details.component.html',
-  styleUrls: ['./hospede-details.component.css']
+  styleUrls: []
 })
 export class HospedeDetailsComponent implements OnInit {
 
