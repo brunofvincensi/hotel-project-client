@@ -30,7 +30,8 @@ Pré-requisitos:
 - Angular
 
 ```bash
-# Baixe ou clone este repositório usando https://github.com/Bruno-ferrariv/hotel-project-client
+# Baixe ou clone este repositório usando 
+https://github.com/Bruno-ferrariv/hotel-project-client
 
 # Estar no projeto pelo terminal e instalar as dependências
 npm i
