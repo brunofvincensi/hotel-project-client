@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class HospedagemService {
 
-  private baseURL = "http://localhost:8080/api/hospedagem";
+  private baseURL = "http://aw-hotel-api.herokuapp.com/api/hospedagem";
 
   constructor(private httpClient: HttpClient) { }
 
