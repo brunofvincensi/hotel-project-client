@@ -40,4 +40,10 @@ npm i
 ng serve
 ```
 
+## Com o servidor local
 
+- Alterar a base URL dos services para
+```bash
+http://localhost:8080/api/
+```
+![TELA](https://github.com/Bruno-ferrariv/hotel-project-client/blob/main/images/service-image.JPG)
