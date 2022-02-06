@@ -30,12 +30,12 @@ Pré-requisitos:
 - Angular
 
 ```bash
+# Baixe ou clone este repositório usando https://github.com/Bruno-ferrariv/hotel-project-server
 
-
-#estar no projeto pelo terminal e instalar as dependências
+# Estar no projeto pelo terminal e instalar as dependências
 npm i
 
-# executar o projeto
+# Executar o projeto
 ng serve
 ```
 
