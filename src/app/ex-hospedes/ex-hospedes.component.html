@@ -1,0 +1,25 @@
+<h2>Ex Hóspedes</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Nome</th>
+            <th> CPF</th>
+            <th> Email </th>
+            <th> Telefone</th>
+            <th> Ultima hospedagem</th>
+            <th> Valor total </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let hospede of exHospedes" >
+
+            <td> {{ hospede.nome }} </td>
+            <td> {{ hospede.cpf }} </td>
+            <td> {{ hospede.email }} </td>
+            <td> {{ hospede.telefone }} </td>
+            <td> R$ {{ hospede.hospedagens[hospede.hospedagens.length - 1].valor }} </td>
+            <td> R$ {{ calcValorTotal(hospede) }} </td>
+
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+<br>
+<div class="col-md-6 offset-md-3">
+    <h3> Inserir Hóspede </h3>
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label> Nome</label>
+            <input type="text" class ="form-control" id = "nome"
+                [(ngModel)] = "hospede.nome" name = "nome">
+        </div>
+
+        <div class="form-group">
+          <label> CPF</label>
+          <input type="text" class ="form-control" id = "cpf"
+              [(ngModel)] = "hospede.cpf" name = "cpf">
+      </div>
+
+        <div class="form-group">
+            <label> Email</label>
+            <input type="text" class ="form-control" id = "email"
+                [(ngModel)] = "hospede.email" name = "email">
+        </div>
+
+        <div class="form-group">
+            <label> Telefone</label>
+            <input type="text" class ="form-control" id = "telefone"
+                [(ngModel)] = "hospede.telefone" name = "telefone">
+        </div>
+
+        <button class = "btn btn-success" type ="submit">Submit</button>
+
+    </form>
+    </div>

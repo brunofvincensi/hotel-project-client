@@ -1,0 +1,30 @@
+<div id="flex-container">
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="hospedes" routerLinkActive="active" class="nav-link" >Hotel App</a>
+        </li>
+        <li class = "nav-item">
+            <a routerLink="inserir-hospede" routerLinkActive="active" class="nav-link" >Adicionar Hospede</a>
+        </li>
+        <li class = "nav-item">
+          <a routerLink="hospedes-ativos" routerLinkActive="active" class="nav-link" >Hospedes Ativos</a>
+      </li>
+      <li class = "nav-item">
+        <a routerLink="ex-hospedes" routerLinkActive="active" class="nav-link" >Ex-Hóspedes</a>
+    </li>
+
+    <li class = "nav-item">
+      <a routerLink="check-in" routerLinkActive="active" class="nav-link" >Check In</a>
+  </li>
+
+    </ul>
+</nav>
+<br>
+<h1 class="text-center"> {{title}} </h1>
+<div class = "container">
+    <router-outlet></router-outlet>
+</div>
+
+</div>

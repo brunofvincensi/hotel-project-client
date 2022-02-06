@@ -1,0 +1,25 @@
+<h2> Hóspedes</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Nome</th>
+            <th> CPF</th>
+            <th> Email </th>
+            <th> Telefone</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let hospede of hospedes" >
+            <td> {{ hospede.nome }} </td>
+            <td> {{ hospede.cpf }} </td>
+            <td> {{ hospede.email }} </td>
+            <td> {{ hospede.telefone }} </td>
+            <td>
+                <button (click) = "alterarHospede(hospede.id)" class = "btn btn-info"> Update</button>
+                <button (click) = "deletarHospede(hospede.id)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "hospedeInfo(hospede.id)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
