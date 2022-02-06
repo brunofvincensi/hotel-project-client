@@ -1,5 +1,5 @@
 # hotel-project-cliente
-- Aplicação front-end do teste feita em Angular
+- Aplicação front-end do teste prático feita em Angular
 
 ![GIF_TELAS](https://github.com/Bruno-ferrariv/hotel-project-cliente/blob/main/gif/hotel_project_animacao.gif)
 
@@ -7,6 +7,7 @@
 - Angular (Type Script, HTML, CSS) | versão 10.0.11
 - Bootstrap
 - npm - gerenciador de dependência
+- GIT
 
 ## Funcionalidades
  
