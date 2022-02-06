@@ -3,10 +3,9 @@
     <thead>
         <tr>
             <th> Nome</th>
-            <th> CPF</th>
             <th> Email </th>
             <th> Telefone</th>
-            <th> nº Quarto </th>
+            <th> Quarto </th>
             <th> Valor última hospedagem</th>
             <th> Valor total </th>
             <th> </th>
@@ -17,11 +16,10 @@
         <tr *ngFor = "let hospede of hospedesAtivos" >
 
             <td> {{ hospede.nome }} </td>
-            <td> {{ hospede.cpf }} </td>
             <td> {{ hospede.email }} </td>
             <td> {{ hospede.telefone }} </td>
             <td> {{ hospede.hospedagemAtual.numeroQuarto}} </td>
-            <td> R$ {{hospede.hospedagens[hospede.hospedagens.length - 2].valor}}</td>
+            <td> R$ {{hospede.hospedagens[hospede.hospedagens.length - 1].valor}}</td>
             <td> R$ {{ calcValorTotal(hospede) }} </td>
             <td>
               <button (click) = "checkOut(hospede.id)" class = "btn btn-danger">CheckOut</button>
